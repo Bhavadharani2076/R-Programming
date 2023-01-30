@@ -1,0 +1,23 @@
+model<-glm(breaks~wool+tension,data=warpbreaks,family=poisson)
+par(mfrow=c(3,3))
+plot(model)
+
+a<-iris
+train<-data.frame(a$Sepal.Length,a$Sepal.Width,a$Petal.Length)
+test<-data.frame(a$Petal.Width,a$Species)
+
+
+summary(train)
+summary(test)
+
+
+model<-glm(a$Sepal.Width~a$Petal.Length, data=train, family=binommial)
+plot(model)
+
+b<-length(iris)
+c<-length(test)
+probability<-c/b
+probability
+
+m<-matrix(test,nrow=150,ncol=2)
+m
