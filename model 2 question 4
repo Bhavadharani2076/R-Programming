@@ -1,0 +1,54 @@
+df1<-c("red","green","blue","pink","black")
+df2<-c(3,5,8,10,34)
+d<-data.frame(df1,df2)
+barplot(df2,names.arg=df1)
+
+
+n=as.integer(readline(prompt="Enter the number :"))
+#using while
+i=1
+fact=1
+while(i<=n){
+	fact=fact*i
+	i=i+1
+}
+print(fact)
+#using for
+f=1
+for(i in 1:n){
+	f=f*i
+}
+print(f)
+#using repeat
+fa=1
+i=1
+repeat{
+	fa=fa*i
+	i=i+1
+	if(i>n){
+		break
+	}
+}
+print(fa)
+
+
+
+Fruits<-c("orange","mango","apple","watermelon","banana")
+Juices<-c("appy","fruity","slice")
+Milkshake<-c("Mango","Papay","Chocolate","Rose")
+l<-list(Fruits,Juices,Milkshake)
+l
+
+
+scores<-c(90,50,70,80,70,60,20,30,80,90,20)
+mean(scores)
+
+
+myinputs<-c(4,5,9,11)
+lottery<-sample(1:49,6,replace=F)
+wrongguesses<-length(setdiff(myinputs,lottery))
+if(wrongguesses==6){
+	print("Mom wins the lottery")
+}else{
+	print("Mom did not win the lottery")
+}
