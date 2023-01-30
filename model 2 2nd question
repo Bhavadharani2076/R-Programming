@@ -1,0 +1,31 @@
+numeric<-c(1,2,3,4,5,6,7,8,9,10)
+complex<-c(1+1i,2+2i,3+3i,4+4i,5+5i,6+6i,7+7i,8+8i,9+9i,10+10i)
+logical<-c(T,T,F,F,T,T,F,F,T,T)
+character<-c("A","B","C","D","E","F","G","H","I","J")
+numeric 
+complex
+logical
+character
+
+n<-as.integer(readline(prompt="Enter a year"))
+if(n%%400==0 || n%%4==0 && n%%100!=0){
+	print("It is a leap year")
+}else{
+	print("It is not a leap year")
+}
+
+
+a<-c(90,50,70,80,70,50,30,30,86,90,22)
+mean(a)
+median(a)
+x<-table(a)
+names(x)[which(x==max(x))]
+
+a<-c(1,2,3,4)
+b<-c(5,6,7,8)
+sum<-a+b
+sum
+product<-a*b
+product
+mean(a)
+mean(b)
