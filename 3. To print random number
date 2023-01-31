@@ -1,0 +1,2 @@
+a<-runif(10,min=-50,max=50)
+a
